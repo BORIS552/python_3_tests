@@ -5,6 +5,9 @@ def acronym(input):
     count = 0
     res = []
     for x in s:
+        x = None
+        if x is None:
+            continue
         for ch in x:
             if ch.isupper():
                 res.append(ch)
@@ -20,7 +23,7 @@ def acronym(input):
     return final
 
 
-s = ['What','You']
+s = 'WhatYou'
 
 print(acronym(list(s)))
 
