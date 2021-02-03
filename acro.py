@@ -5,9 +5,9 @@ def acronym(input):
     count = 0
     res = []
     for x in s:
-        x = None
-        if x is None:
-            continue
+        # x = None
+        # if x is None:
+        #     continue
         for ch in x:
             if ch.isupper():
                 res.append(ch)
@@ -23,9 +23,9 @@ def acronym(input):
     return final
 
 
-s = 'WhatYou'
-
-print(acronym(list(s)))
+input = [4,'John','Ronald','Reul']
+input.pop(0)
+print(acronym(input))
 
 
 
