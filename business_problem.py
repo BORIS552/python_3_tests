@@ -28,9 +28,7 @@ def interactions_to_sorted_businesses(interactions: Iterable[Interaction]) -> Li
     for it in interactions:
         dict[it.business_id] = dict[it.business_id]+WEIGHTS[it.interaction_type]
     
-    new_dict = {}
-    new_dict = sorted(dict.items(), key=lambda item: item[1], reverse=True)
-    return new_dict
+    return sorted(dict.items(), key=lambda item: item[1], reverse=True)
     #print(sorted(dict.items(), key=lambda item: item[1]))
 
 
@@ -48,7 +46,7 @@ def main():
     sorted_businesses = interactions_to_sorted_businesses(interactions)
 
     for business_id in sorted_businesses:
-        print(business_id)
+        print(business_id[0])
 
 
 if __name__ == '__main__':
