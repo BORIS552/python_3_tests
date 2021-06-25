@@ -1,0 +1,22 @@
+[
+    {
+        "interaction_type":"photo",
+        "business_id": 1
+    },
+    {
+        "interaction_type": "bookmark",
+        "business_id": 2
+    },
+    {
+    "interaction_type": "check-in",
+    "business_id": 3
+    },
+    {
+        "interaction_type": "review draft",
+        "business_id": 4
+    },
+    {
+        "interaction_type": "check-in",
+        "business_id": 4
+    }
+]
